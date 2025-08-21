@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyProject</div>
+    <ul class="nav-links">
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="about">About</a></li>
+      <li><a href="#" data-section="contact">Contact</a></li>
+      <li><a href="#" data-section="tasks">Tasks</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <main>
+    <section id="home" class="section active">
+      <h1>Welcome to My Web Project</h1>
+      <p>
+        This project showcases how HTML, CSS, and JavaScript can be combined to
+        create an <strong>interactive, responsive, and user-friendly web application</strong>.  
+      </p>
+      <p>
+        Explore the sections to learn about form building, validation, responsive layouts,
+        and dynamic DOM manipulation using a to-do list example.
+      </p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About This Project</h2>
+      <p>
+        The goal of this project is to <strong>enhance web development skills</strong>
+        through hands-on practice. It follows four steps:
+      </p>
+      <ul>
+        <li><strong>1. Contact Form:</strong> Built with HTML and CSS for structured data collection.</li>
+        <li><strong>2. Form Validation:</strong> Implemented with JavaScript to ensure accurate inputs.</li>
+        <li><strong>3. Responsive Layout:</strong> Designed using Flexbox, CSS Grid, and media queries.</li>
+        <li><strong>4. To-Do List:</strong> A dynamic example of DOM manipulation with JavaScript.</li>
+      </ul>
+      <p>
+        Together, these steps demonstrate the foundation of creating professional websites.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+
+    <section id="tasks" class="section">
+      <h2>My To-Do List</h2>
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Web Project | Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
